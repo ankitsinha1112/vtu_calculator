@@ -1,0 +1,34 @@
+.App {
+  text-align: center;
+}
+
+.App-header1 {
+  background-color: #3D4352;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.container1
+{
+  text-decoration: none;
+  background-color: #6A7592;
+  box-shadow: 8px 8px 15px whitesmoke;
+  border: 2px solid brown;
+  margin: 2rem;
+}
+.content p
+{
+  text-decoration: none;
+}
+.content h2
+{
+  text-decoration: none;
+}
+.main
+{
+  display: flex;
+}
