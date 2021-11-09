@@ -29,3 +29,13 @@
   background-color: #ddd;
   color: black;
 } */
+
+@media screen and (max-width: 420px) {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+  }
+}
