@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+#top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 88px;
+}
+
+#top p{
+    margin: 23px;
+}
+
+#employee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+}
+
+#dhomya{
+    width: 40%;
+    /* margin: 25px 0px 0px 50px; */
+    margin: 59px;
+  
+    height: 555px;
+    text-align: center;
+    /* font-size: 1.2rem; */
+    height: auto;
+}
+
+#ankit{
+    width: 40%;
+    /* margin: 25px 0px 0px 85px; */
+    margin: 59px;
+  
+    height: 555px;
+    text-align: center;
+    /* font-size: 1.2rem; */
+    height: auto;
+}
+
+#dhomya img{
+    height: 158px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#ankit img{
+    height: 158px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+@media screen and (max-width: 728px) {
+    #employee {
+      flex-direction: column;
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 728px) {
+    #dhomya {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 728px) {
+    #ankit {
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 728px) {
+    #top p {
+      font-size: 1.2rem;
+    }
+  }
+
