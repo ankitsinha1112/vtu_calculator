@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-header1 {
+  background-color: BLACK;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.container1
+{
+  color: whitesmoke;
+  text-decoration: none;
+  background-color: BLACK;
+  box-shadow: 8px 8px 15px white;
+  font-family: 'Ubuntu', sans-serif;
+  border: 2px solid #7b5454;
+  margin: 2rem;
+  height: 25vh;
+  padding: 1rem;
+}
+.container1:hover{
+  color: aliceblue;
+  transform: scale(1.1);
+  background-color: rgb(72 87 87);
+}
+a[target='_blank'] 
+{
+  text-decoration: none;
+}
+.main
+{
+  display: flex;
+}
+.head3
+{
+  font-family: 'Ubuntu', sans-serif;
+  background-color: black;
+  font-size: 5.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 1105px) {
+  .head3 {
+    font-size: 4.5rem;
+  }
+  .container1{
+    font-size: 1.2rem;
+    margin: 1.5rem;
+    padding: 0.8rem;
+    
+  box-shadow: 5px 5px 10px white;
+  }
+}
+@media screen and (max-width: 860px) {
+  .head3 {
+    font-size: 3rem;
+  }
+  .container1{
+    font-size: 1rem;
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 619px) {
+  .head3 {
+    font-size: 3rem;
+  }
+  .container1{
+    font-size: 1.1rem;
+    margin: 1rem;
+    height: 30vh;
+    
+  box-shadow: 3px 3px 8px white;
+  }
+}
+@media screen and (max-width: 540px) {
+  .head3 {
+    font-size: 2.5rem;
+  }
+  .container1{
+    font-size: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .head3 {
+    font-size: 2.2rem;
+  }
+  .container1{
+    font-size: 0.9rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  box-shadow: 2px 2px 5px white;
+  }
+}
+@media screen and (max-width: 350px) {
+  .head3 {
+    font-size: 2rem;
+  }
+  .container1{
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}

@@ -1,0 +1,13 @@
+.sem{
+    padding: 10px 2px;      
+}
+.sem input{
+    border-radius: 5px; 
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 25px;
+    font-weight: bolder;
+    font-size: 15px;
+  
+}
