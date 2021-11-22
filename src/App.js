@@ -5,8 +5,10 @@ import './App.css';
 import { Sgpa_calculator } from "./components/Sgpa_calculator";
 import { Home } from "./components/Home_sgpa_calculator";
 import { Main } from "./components/Index";
-import { Cgpa } from "./components/Cgpa_calculator";
+import  Cgpa  from "./components/Cgpa_calculator";
 import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import { About } from "./components/About";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
   class App extends Component {
@@ -26,7 +28,9 @@ import { Navbar } from "./components/Navbar";
        />
        </Route>
        <Route path="/cgpa" component={Cgpa}/>
+       <Route path="/about" component={About}/>
       </Switch>
+      <Footer/>
     </div></BrowserRouter>
       );
   }

@@ -1,15 +1,44 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import './home_sgpa_calculator.css'
 // import { Sgpa_calculator } from "./components/Sgpa_calculator";
 // import {Link} from "react-router";
 export const Home = () => {
+  const [state, setState] = useState({
+    brch: "",
+  });
+  const handleChange = e => {
+    setState({
+      [e.target.name]: e.target.value,
+    });
+    console.log(state.brch);
+  }
   return (
     <div>
        
        <header className="App-header">
         <div className="head3">VTU SGPA <br /> CALCULATOR</div>
         <div className="head2">
+        <label>
+        Choose Your Branch :
+        <div className="branch">
+        <select
+          name="brch"
+          value={state.brch}
+          onChange={handleChange}
+          >
+          <option value="">Select</option>
+          <option value="cse">CSE/ISE</option>
+          <option value="ece">ECE</option>
+          <option value="eee">EEE</option>
+          <option value="ete">ETE</option>
+          <option value="me">ME</option>
+          <option value="civil">CIVIL</option>
+        </select>
+          </div> 
+      </label>
+      <br />
+      <br />
         CHOOSE YOUR <span className="inp">SEMESTER</span> 
         </div>
         <div className="container">
