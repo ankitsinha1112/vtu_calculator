@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/vtu_calculator/static/css/main.85b96336.chunk.css",
+    "main.js": "/vtu_calculator/static/js/main.e26b8dfe.chunk.js",
+    "main.js.map": "/vtu_calculator/static/js/main.e26b8dfe.chunk.js.map",
+    "runtime-main.js": "/vtu_calculator/static/js/runtime-main.adddd6e1.js",
+    "runtime-main.js.map": "/vtu_calculator/static/js/runtime-main.adddd6e1.js.map",
+    "static/js/2.233c0097.chunk.js": "/vtu_calculator/static/js/2.233c0097.chunk.js",
+    "static/js/2.233c0097.chunk.js.map": "/vtu_calculator/static/js/2.233c0097.chunk.js.map",
+    "static/js/3.0733e01a.chunk.js": "/vtu_calculator/static/js/3.0733e01a.chunk.js",
+    "static/js/3.0733e01a.chunk.js.map": "/vtu_calculator/static/js/3.0733e01a.chunk.js.map",
+    "index.html": "/vtu_calculator/index.html",
+    "static/css/main.85b96336.chunk.css.map": "/vtu_calculator/static/css/main.85b96336.chunk.css.map",
+    "static/js/2.233c0097.chunk.js.LICENSE.txt": "/vtu_calculator/static/js/2.233c0097.chunk.js.LICENSE.txt",
+    "static/media/ankit.f3f8ae8f.png": "/vtu_calculator/static/media/ankit.f3f8ae8f.png",
+    "static/media/dhomya.a7794e8c.jpeg": "/vtu_calculator/static/media/dhomya.a7794e8c.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.adddd6e1.js",
+    "static/js/2.233c0097.chunk.js",
+    "static/css/main.85b96336.chunk.css",
+    "static/js/main.e26b8dfe.chunk.js"
+  ]
+}
