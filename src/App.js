@@ -2,7 +2,7 @@ import React, { Component  } from "react";
 import { BrowserRouter,Route,Switch } from "react-router-dom";
 // import { connect } from "react-redux";
 import './App.css';
-import { Sgpa_calculator } from "./components/Sgpa_calculator";
+import  {Sgpa_calculator}  from "./components/Sgpa_calculator";
 import { Home } from "./components/Home_sgpa_calculator";
 import { Main } from "./components/Index";
 import  Cgpa  from "./components/Cgpa_calculator";

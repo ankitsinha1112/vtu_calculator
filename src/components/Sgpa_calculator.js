@@ -1,9 +1,18 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import React from 'react'
+// import { NavLink } from 'react-router-dom'
 import './Sgpa_calculator.css'
-
+import React,{useState} from 'react'
 
 export const Sgpa_calculator = (props) => {
+  // class Sgpa_calculator extends React.Component {
+  // constructor(props) {
+  //   super(props);
+  //     this.state = {
+  //       Title='',
+        
+  //     };
+  // }
+  // render(){
     return (
       <div>
         <div className="head">
@@ -127,10 +136,19 @@ export const Sgpa_calculator = (props) => {
               </div>
             </div>
             <div className="btn">
-              <button>Submit</button>
-            </div>
+                                 {/* <button >Submit</button> */}
+                                 {/* {this.state.count} */}
+                                 <button onClick={this.exe}>Submit</button>
+                                      </div>
+                                {
+                                 this.state.print?
+                                 ((this.state.count != 0) ? <h1>{(Number(this.state.total/this.state.count).toFixed(2))}</h1> : <h1>{(Number(0).toFixed(2))}</h1>)
+                                : null
+                                }
           </div>
         </form>
       </div>
     );
-  };
+  }
+// }
+// export default Sgpa_calculator;
