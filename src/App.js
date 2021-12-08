@@ -1,5 +1,5 @@
 import React, { Component  } from "react";
-import { BrowserRouter,Route,Switch } from "react-router-dom";
+import { HashRouter,Route,Switch } from "react-router-dom";
 // import { connect } from "react-redux";
 import './App.css';
 import  {Sgpa_calculator}  from "./components/Sgpa_calculator";
@@ -15,7 +15,7 @@ import { About } from "./components/About";
   render() {
     return (
       
-      <BrowserRouter>
+      <HashRouter>
     <div className="App">
         <Navbar/>
       <Switch>
@@ -31,7 +31,7 @@ import { About } from "./components/About";
        <Route path="/about" component={About}/>
       </Switch>
       <Footer/>
-    </div></BrowserRouter>
+    </div></HashRouter>
       );
   }
 }

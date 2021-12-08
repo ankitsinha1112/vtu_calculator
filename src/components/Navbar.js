@@ -1,16 +1,27 @@
 import React from "react";
 import './navbar.css';
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <div>
       <div className="topnav">
-        <a className="active" href="/">
+        {/* <Link to className="active" href="/"> */}
+        <Link to="/">
           HOME
-        </a>
-        <a href="/home">SGPA CALCULATOR</a>
-        <a href="/cgpa">CGPA CALCULATOR</a>
-        <a href="/about">ABOUT US</a>
+        </Link>
+        <Link to="/home">
+        SGPA CALCULATOR
+        </Link>
+        <Link to="/cgpa">
+        CGPA CALCULATOR
+        </Link>
+        <Link to="/about">
+        ABOUT US
+        </Link>
+        {/* <a href="/home">SGPA CALCULATOR</a>
+        <a href="/cgpa"></a>
+        <a href="/about"></a> */}
       </div>
     </div>
   );

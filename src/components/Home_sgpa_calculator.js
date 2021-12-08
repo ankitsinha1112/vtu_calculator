@@ -43,7 +43,7 @@ export const Home = () => {
         </div>
         <div className="container">
           <div className="o1">
-          <NavLink to="/sgpa-calculator" target="_blank"> 1st & 2nd SEM <br />
+          <NavLink to="/sgpa-calculator" > 1st & 2nd SEM <br />
             PHYSICS-CYCLE</NavLink>
           </div>
           <div className="o1">
