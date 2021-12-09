@@ -18,7 +18,7 @@ export const Main = () => {
         <div className="head3">VTU <br />SGPA & CGPA <br />CALCULATOR</div>
         <div className="main">
           <div className="c1">
-            <StyledLink to="/home" target="_blank">
+            <StyledLink to="/home" >
               <div className="container1">
                 <div className="icon">
 
@@ -28,7 +28,7 @@ export const Main = () => {
                 </div>
               </div>
             </StyledLink>
-            <StyledLink to="/cgpa" target="_blank">
+            <StyledLink to="/cgpa" >
               <div className="container1">
                 <div className="icon">
 
@@ -51,7 +51,7 @@ export const Main = () => {
                 </div>
               </div>
             </a>
-            <StyledLink to="/home" target="_blank">
+            <StyledLink to="/sgpa-percentage">
               <div className="container1">
                 <div className="icon">
 

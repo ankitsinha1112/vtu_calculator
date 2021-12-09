@@ -9,6 +9,7 @@ import  Cgpa  from "./components/Cgpa_calculator";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { About } from "./components/About";
+import Sgpatopercentage from "./components/Sgpatopercentage";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
   class App extends Component {
@@ -28,6 +29,7 @@ import { About } from "./components/About";
        />
        </Route>
        <Route path="/cgpa" component={Cgpa}/>
+       <Route path="/sgpa-percentage" component={Sgpatopercentage}/>
        <Route path="/about" component={About}/>
       </Switch>
       <Footer/>
