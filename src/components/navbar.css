@@ -29,7 +29,7 @@
   background-color: #ddd;
   color: black;
 } */
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 650px) {
   .topnav {
     display: flex;
     flex-direction: column;
