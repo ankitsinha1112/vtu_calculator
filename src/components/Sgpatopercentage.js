@@ -41,7 +41,7 @@ class Sgpatopercentage extends React.Component {
                                           </div>
                                     {
                                      this.state.print?
-                                     ((this.state.cgpa != '') ? <h1>Percentage Obtained : {(Number((this.state.cgpa-0.75)*10).toFixed(2))} %</h1> : alert('Please enter value'))
+                                     ((this.state.cgpa !== '') ? <h1>Percentage Obtained : {(Number((this.state.cgpa-0.75)*10).toFixed(2))} %</h1> : alert('Please enter value'))
                                     : null
                                     }
                             </div>

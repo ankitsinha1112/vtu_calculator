@@ -142,7 +142,7 @@ export const Sgpa_calculator = (props) => {
                                       </div>
                                 {
                                  this.state.print?
-                                 ((this.state.count != 0) ? <h1>{(Number(this.state.total/this.state.count).toFixed(2))}</h1> : <h1>{(Number(0).toFixed(2))}</h1>)
+                                 ((this.state.count !== 0) ? <h1>{(Number(this.state.total/this.state.count).toFixed(2))}</h1> : <h1>{(Number(0).toFixed(2))}</h1>)
                                 : null
                                 }
           </div>
