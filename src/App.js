@@ -6,6 +6,7 @@ import { Sgpa_calculator } from "./components/Sgpa_calculator";
 import { Home } from "./components/Home_sgpa_calculator";
 import { Main } from "./components/Index";
 import Cgpa from "./components/Cgpa_calculator";
+import Sgpatopercentage from "./components/Sgpatopercentage";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { About } from "./components/About";
@@ -497,6 +498,7 @@ class App extends Component {
               {setbranch}
             </Route>
             <Route path="/cgpa" component={Cgpa} />
+            <Route path="/sgpa-percentage" component={Sgpatopercentage} />
             <Route path="/about" component={About} />
           </Switch>
           <Footer />
