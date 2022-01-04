@@ -141,36 +141,9 @@ class Cgpa extends React.Component {
         (this.state.num7 !==0 && this.state.num7!=='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
         (this.state.num8 !==0 && this.state.num8!=='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num8)})) : console.log('hello');
         (this.state.num8 !==0 && this.state.num8!=='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
-        
-        // (this.state.num1!='' || this.state.num1!=0) ? this.setState(prevstate => ({ total: (prevstate.total + this.state.num1)})):this.setState(prevstate => ({ total: prevstate.total}));
         this.setState({ print:true});
         console.log(this.state.total);
         console.log(this.state.count);
-        // this.setState({total : Number(0),
-        //     count:Number(0)
-        // });
-        // console.log(this.state.num2);
-        // console.log(this.state.total);
-        // console.log(this.state.num1);
-        // this.setState(prevstate => ({ total: prevstate.total + 1}));
-        // this.setState(prevstate => ({ total: prevstate.total + 1}));
-        // this.setState({
-        //     total: parseInt(this.state.num1) + parseInt(this.state.num2) +parseInt(this.state.num3) +parseInt(this.state.num4) +parseInt(this.state.num5) +
-        //     parseInt(this.state.num6) + parseInt(this.state.num7) + parseInt(this.state.num8),
-        //     print:true,
-        //     count: parseInt(this.state.count1) + parseInt(this.state.count2) +parseInt(this.state.count3) +parseInt(this.state.count4) +parseInt(this.state.count5) +
-        //     parseInt(this.state.count6) + parseInt(this.state.count7) + parseInt(this.state.count8),
-        //     count1:0,
-        //     count2:0,
-        //     count3:0,
-        //     count4:0,
-        //     count5:0,
-        //     count6:0,
-        //     count7:0,
-        //     count8:0,
-        //     cgpa: this.state.count==0? 0.0:this.state.total/this.state.count
-        // })
-        // event.prevent.default();
     }
     render(){
     return (
@@ -214,8 +187,6 @@ class Cgpa extends React.Component {
                             </div>
                             
                             <div className="btn">
-                                 {/* <button >Submit</button> */}
-                                 {/* {this.state.count} */}
                                  <button onClick={this.exe}>Submit</button>
                                       </div>
                                 {

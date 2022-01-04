@@ -35,17 +35,7 @@ import './Sgpa_calculator.css'
         c8:'',
         c9:'',
       };
-      // this.updatebrch = this.updatebrch.bind(this);
-      // this.updatesem = this.updatesem.bind(this);
-  }
-//   updatebrch = (newbrch) => {
-
-//     this.setState({brch: newbrch});
-// }
-//   updatesem = (newsem) => {
-
-//     this.setState({sem: newsem});
-// }
+    }
   handlenum1=(event)=>{
      this.setState({
        m1:event.target.value,
@@ -94,13 +84,9 @@ handleChange8=(event)=>{
     print:false,
   });
 }
-exe=()=>{
- 
+exe=(event)=>{
+  event.preventDefault()
   this.setState({ print:true});
-  // this.event.preventDefault();
-  // useEffect(() => {
-  // setprint(true);
-// }, []);
 }
   render(){
     console.log(this.props.brch);
@@ -563,8 +549,6 @@ exe=()=>{
           break;
       }
     }
-  // }, []);
-   
     return (
       <div>
         <div className="head">
@@ -704,10 +688,10 @@ exe=()=>{
               </div>
             </div>
             <div className="btn">
-                                 <button  onClick={() => this.exe}>Submit</button>
+                                 <button  onClick={this.exe}>Submit</button>
             </div>
                                 {
-                                (this.state.print)?
+                                this.state.print?
                                 (<h1>{Number(Number(this.state.m1)+Number(this.state.m2)+Number(this.state.m3)+Number(this.state.m4)+Number(this.state.m5)+Number(this.state.m6)+Number(this.state.m7)+Number(this.state.m8))}</h1>)
                                 :(null)
                                 } 
