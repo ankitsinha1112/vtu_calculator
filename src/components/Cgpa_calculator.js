@@ -22,25 +22,6 @@ class Cgpa extends React.Component {
           cgpa:0.0
         };
     }
-    // constructor(){
-    //     super();
-    //     this.state={
-    //         num1:'',
-    //         num2:'',
-    //         num#:''*8
-    //     }
-    // }
-    // const [data,setData]=useState(null);
-    // const [print,setPrint]=useState(false);
-//    getdata=(event) =>{
-//             if(event.target.value>10 || event.target.value<0){
-//                 alert("You can only insert value less than 0 or greater than 10");
-//                 event.target.value=0;
-//             }
-//         }
-            // sum+=val.target.value;
-            // setData(sum);
-            // setPrint(false);
     handlenum1 =(event) =>{
         (event.target.value>10 || event.target.value<0) ? alert("You can only insert value in range of 0 to 10") : console.log('hello');
         (event.target.value>10 || event.target.value<0) ? event.target.value=0 : console.log('hello');

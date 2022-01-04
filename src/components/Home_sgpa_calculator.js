@@ -32,9 +32,14 @@ class Home extends React.Component {
 })
 }
 exe=()=>{
- 
-  this.props.handlebrch(this.state.brch)
-  this.props.handlesem(this.state.sem)
+ if(this.state.brch==='' || this.state.sem==='')
+ {
+      alert('Select a value from Branch and Semester')
+ }
+ else{
+   this.props.handlebrch(this.state.brch)
+   this.props.handlesem(this.state.sem)
+ }
 }
   render(){
     return (
@@ -50,6 +55,7 @@ exe=()=>{
           name="brch"
           value={this.state.brch}
           onChange={this.handlebrch}
+          required
           >
           <option value="">Select</option>
           <option value="cse">CSE/ISE</option>
@@ -69,6 +75,7 @@ exe=()=>{
           name="sem"
           value={this.state.sem}
           onChange={this.handlesem}
+          required
           >
           <option value="">Select</option>
           <option value="1st & 2nd SEM PHYSICS-CYCLE">1st & 2nd SEM PHYSICS-CYCLE</option>

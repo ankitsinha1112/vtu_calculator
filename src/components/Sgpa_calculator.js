@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect } from 'react-router-dom';
 import './Sgpa_calculator.css'
 
   class Sgpacalculator extends React.Component {
@@ -89,6 +90,10 @@ exe=(event)=>{
   this.setState({ print:true});
 }
   render(){
+    if(this.props.brch==='' || this.props.sem===''){
+      console.log('return');
+      return <Redirect to="/home" />
+    }
     console.log(this.props.brch);
     console.log(this.props.sem);
     if (this.props.sem ==='1st & 2nd SEM PHYSICS-CYCLE') {
