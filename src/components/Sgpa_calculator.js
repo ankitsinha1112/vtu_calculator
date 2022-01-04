@@ -1,12 +1,8 @@
-// import React from 'react'
-// import { NavLink } from 'react-router-dom'
-import './Sgpa_calculator.css'
-import {brch,sem} from './Home_sgpa_calculator'
 import React from 'react'
+import './Sgpa_calculator.css'
 
-// export const Sgpacalculator = () => {
   class Sgpacalculator extends React.Component {
-  constructor(props) {
+    constructor(props) {
     super(props);
       this.state = {
        Title:'',
@@ -38,9 +34,18 @@ import React from 'react'
         c7:'',
         c8:'',
         c9:'',
-
       };
+      // this.updatebrch = this.updatebrch.bind(this);
+      // this.updatesem = this.updatesem.bind(this);
   }
+//   updatebrch = (newbrch) => {
+
+//     this.setState({brch: newbrch});
+// }
+//   updatesem = (newsem) => {
+
+//     this.setState({sem: newsem});
+// }
   handlenum1=(event)=>{
      this.setState({
        m1:event.target.value,
@@ -89,7 +94,7 @@ handleChange8=(event)=>{
     print:false,
   });
 }
-exe=(event)=>{
+exe=()=>{
  
   this.setState({ print:true});
   // this.event.preventDefault();
@@ -98,41 +103,9 @@ exe=(event)=>{
 // }, []);
 }
   render(){
-    console.log(brch);
-    console.log(sem);
-    // const [sub1,this.setState({sub1:]=useState(0);
-    // const [m1,setm1]=useState(0);
-    // const [sub2,this.setState({sub2:]=useState(0);
-    // const [m2,setm2]=useState(0);
-    // const [sub3,this.setState({sub3:]=useState(0);
-    // const [m3,setm3]=useState(0);
-    // const [sub4,this.setState({sub4:]=useState(0);
-    // const [m4,setm4]=useState(0);
-    // const [sub5,this.setState({sub5:]=useState(0);
-    // const [m5,setm5]=useState(0);
-    // const [sub6,this.setState({sub6:]=useState(0);
-    // const [m6,setm6]=useState(0);
-    // const [sub7,this.setState({sub7:]=useState(0);
-    // const [m7,setm7]=useState(0);
-    // const [sub8,this.setState({sub8:]=useState(0);
-    // const [m8,setm8]=useState(0);
-    // const [sub9,this.setState({sub9:]=useState(0);
-    // const [m9,setm9]=useState(0);
-    // const [Title,this.setState({Title:]=useState(0);
- 
-      // if(event.target.value>100 || event.target.value<0)
-      // {
-      //   alert()
-      // }
-  // const setbranch = (brch, sem) => {
-    // const [brch,setbrch]=useState("CSE/ISE")});
-    // const [sem,setsem]=useState(3);
-    // }
-    // useEffect(() => {
-    if (sem ==='1st & 2nd SEM PHYSICS-CYCLE') {
-      // setbrch("civil")})
-      
-      // this.setState({sub1:(event.target.value);
+    console.log(this.props.brch);
+    console.log(this.props.sem);
+    if (this.props.sem ==='1st & 2nd SEM PHYSICS-CYCLE') {
       if(this.state.Title!=='(2018 SCHEME) PHYSICS GROUP 1ST & 2ND SEM.'){
       this.setState({
                 Title:"(2018 SCHEME) PHYSICS GROUP 1ST & 2ND SEM.",
@@ -154,18 +127,8 @@ exe=(event)=>{
           c8:'1'
       });
     }
-        // this.setState({Title:("(2018 SCHEME) PHYSICS GROUP 1ST & 2ND SEM.")});
-        // this.setState({sub1:("18MAT11/21")});
-        // this.setState({sub2:("18PHY12/22")});
-        // this.setState({sub3:("18ELE13/23")});
-        // this.setState({sub4:("18CIV14/24")});
-        // this.setState({sub5:("18EGDL15/25")});
-        // this.setState({sub6:("18PHYL16/26")});
-        // this.setState({sub7:("18ELEL17/27")});
-        // this.setState({sub8:("18EGH18/28")});
     }
- 
-    else if (sem === "1st & 2nd SEM CHEMISTRY-CYCLE") {   
+    else if (this.props.sem === "1st & 2nd SEM CHEMISTRY-CYCLE") {   
       if(this.state.Title!=='(2018 SCHEME) CHEMISTRY GROUP 1ST & 2ND SEM.'){
      this.setState({Title:("(2018 SCHEME) CHEMISTRY GROUP 1ST & 2ND SEM.")})
       this.setState({sub1:("18MAT11/21")})
@@ -178,11 +141,10 @@ exe=(event)=>{
         this.setState({sub8:("18EGH18")})
       }
     }
-      else if (brch === "cse") {
-        console.log(sem)
-        switch (sem) {
+      else if (this.props.brch === "cse") {
+        switch (this.props.sem) {
           case '3':
-              console.log(sem);
+              // console.log(sem);
               if(this.state.Title!=='3rd SEM'){
               this.setState({Title:("3rd SEM")})
               this.setState({sub1:("18MAT31")})
@@ -264,8 +226,8 @@ exe=(event)=>{
       }
     }
 
-    else if (brch === "ece") {
-      switch (sem) {
+    else if (this.props.brch === "ece") {
+      switch (this.props.sem) {
         case '3':
           if(this.state.Title!=='3rd SEM'){
            this.setState({Title:("3rd SEM")})
@@ -348,8 +310,8 @@ exe=(event)=>{
       }
     }
 
-    else if (brch === "eee") {
-      switch (sem) {
+    else if (this.props.brch === "eee") {
+      switch (this.props.sem) {
         case '3':
           if(this.state.Title!=='3rd SEM'){
            this.setState({Title:("3rd SEM")})
@@ -435,8 +397,8 @@ exe=(event)=>{
       }
     }
 
-    else if (brch === "me") {
-      switch (sem) {
+    else if (this.props.brch === "me") {
+      switch (this.props.sem) {
         case '3':
           if(this.state.Title!=='3rd SEM'){
            this.setState({Title:("3rd SEM")})
@@ -520,8 +482,8 @@ exe=(event)=>{
       }
     }
 
-    else if (brch === "civil") {
-      switch (sem) {
+    else if (this.props.brch === "civil") {
+      switch (this.props.sem) {
         case '3':
           if(this.state.Title!=='3rd SEM'){
            this.setState({Title:("3rd SEM")})
@@ -596,15 +558,12 @@ exe=(event)=>{
           this.setState({sub4:("18CVS84")})
           this.setState({sub5:("18CVI85")})
           }
-
           break;
-
         default:
           break;
       }
     }
   // }, []);
-    // const [print,setprint]=useState(false);
    
     return (
       <div>
@@ -745,8 +704,7 @@ exe=(event)=>{
               </div>
             </div>
             <div className="btn">
-            {/* <h1>({print})</h1> */}
-                                 <button  onClick={this.exe}>Submit</button>
+                                 <button  onClick={() => this.exe}>Submit</button>
             </div>
                                 {
                                 (this.state.print)?

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './home_sgpa_calculator.css'
-// import { Sgpa_calculator } from "../components/Sgpa_calculator";
 import styled from 'styled-components';
 const StyledLink = styled(Link)`
     text-decoration: none;
@@ -14,43 +13,29 @@ const StyledLink = styled(Link)`
         color:black;
       }
 `;
-let brch="cse";
-let sem="3";
-// import { Sgpa_calculator } from "./components/Sgpa_calculator";
-// import {Link} from "react-router";
 class Home extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
       this.state = {
         brch:'',
-        sem:'',
+        sem:''
       };
   }
   handlebrch =(event) =>{
     this.setState({
         brch:event.target.value,
 })
-brch=event.target.value;
-;
 }
   handlesem =(event) =>{
     this.setState({
         sem:event.target.value,
 })
-sem=event.target.value;
-;
 }
-// export const Home = () => {
-//   const [state, setState] = useState({
-//     brch: "",
-//     sem:""
-//   });
-  // const handleChange1 = e => {
-  //   setState({
-  //     [e.target.name]: e.target.value,
-  //   });
-   
-  // }
+exe=()=>{
+ 
+  this.props.handlebrch(this.state.brch)
+  this.props.handlesem(this.state.sem)
+}
   render(){
     return (
     <div>
@@ -80,32 +65,6 @@ sem=event.target.value;
         CHOOSE YOUR <span className="inp">SEMESTER : </span> 
         </div>
         <div className="container">
-          {/* <div className="o1">
-          <NavLink to="/sgpa-calculator" > 1st & 2nd SEM <br />
-            PHYSICS-CYCLE</NavLink>
-          </div>
-          <div className="o1">
-          <a href="#" target="_blank"> 1st & 2nd SEM <br />
-          CHEMISTRY-CYCLE</a>
-          </div>
-          <div className="o1">
-          <a href="#" target="_blank"> 3rd SEM </a>
-          </div>
-          <div className="o1">
-          <a href="#" target="_blank"> 4th SEM </a>
-          </div>
-          <div className="o1">
-          <a href="#" target="_blank"> 5th SEM </a>
-          </div>
-          <div className="o1">
-          <a href="#" target="_blank"> 6th SEM</a>
-          </div>
-          <div className="o1">
-          <a href="#" target="_blank"> 7th SEM</a>
-          </div>
-          <div className="o1">
-          <a href="#" target="_blank"> 8th SEM</a>
-          </div> */}
           <select
           name="sem"
           value={this.state.sem}
@@ -122,7 +81,7 @@ sem=event.target.value;
           <option value="8">8th SEM</option>
         </select>
         <div className="btn">
-                                 <button >  <StyledLink to="/sgpa-calculator" > Submit </StyledLink> </button>
+                                 <button onClick={() => this.exe()}>  <StyledLink to="/sgpa-calculator" > Submit </StyledLink> </button>
          </div>
         </div>
       </header>
@@ -132,5 +91,4 @@ sem=event.target.value;
 }
 
 export default Home;
-export {brch,sem};
 
