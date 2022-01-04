@@ -20,15 +20,25 @@ import React from 'react'
         sub7:'',
         sub8:'',
         sub9:'',
-        m1:0,
-        m2:0,
-        m3:0,
-        m4:0,
-        m5:0,
-        m6:0,
-        m7:0,
-        m8:0,
-        m9:0,
+        m1:'',
+        m2:'',
+        m3:'',
+        m4:'',
+        m5:'',
+        m6:'',
+        m7:'',
+        m8:'',
+        m9:'',
+        c1:'',
+        c2:'',
+        c3:'',
+        c4:'',
+        c5:'',
+        c6:'',
+        c7:'',
+        c8:'',
+        c9:'',
+
       };
   }
   handlenum1=(event)=>{
@@ -80,7 +90,9 @@ handleChange8=(event)=>{
   });
 }
 exe=(event)=>{
+ 
   this.setState({ print:true});
+  // this.event.preventDefault();
   // useEffect(() => {
   // setprint(true);
 // }, []);
@@ -125,13 +137,21 @@ exe=(event)=>{
       this.setState({
                 Title:"(2018 SCHEME) PHYSICS GROUP 1ST & 2ND SEM.",
           sub1:"18MAT11/21",
+          c1:'4',
           sub2:"18PHY12/22",
+          c2:'4',
           sub3:"18ELE13/23",
+          c3:'3',
           sub4:"18CIV14/24",
+          c4:'3',
           sub5:"18EGDL15/25",
+          c5:'3',
           sub6:"18PHYL16/26",
+          c6:'1',
           sub7:"18ELEL17/27",
-          sub8:"18EGH18/28"
+          c7:'1',
+          sub8:"18EGH18/28",
+          c8:'1'
       });
     }
         // this.setState({Title:("(2018 SCHEME) PHYSICS GROUP 1ST & 2ND SEM.")});
@@ -726,7 +746,7 @@ exe=(event)=>{
             </div>
             <div className="btn">
             {/* <h1>({print})</h1> */}
-                                 <button onClick={this.exe}>Submit</button>
+                                 <button  onClick={this.exe}>Submit</button>
             </div>
                                 {
                                 (this.state.print)?
