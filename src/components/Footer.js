@@ -7,7 +7,7 @@ export const Footer = () => {
         <div>
             <footer>
                 <div id="footer">
-                    <p>copyright &copy; www.vtusgpa.tk</p>
+                    <p>copyright &copy; www.vtusgpacalculator.tk</p>
                 </div>
             </footer>
         </div>

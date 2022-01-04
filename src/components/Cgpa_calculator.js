@@ -2,7 +2,7 @@
 // import { NavLink } from 'react-router-dom'
 import './Cgpa_calculator.css'
 
-import React,{useState} from 'react'
+import React from 'react'
 
 class Cgpa extends React.Component {
     constructor() {
@@ -125,22 +125,22 @@ class Cgpa extends React.Component {
 
     exe =(event)=>{
         
-        (this.state.num1 !=0 && this.state.num1!='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num1)})) : console.log('hello');
-        (this.state.num1 !=0 && this.state.num1!='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
-        (this.state.num2 !=0 && this.state.num2!='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num2)})) : console.log('hello');
-        (this.state.num2 !=0 && this.state.num2!='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
-        (this.state.num3 !=0 && this.state.num3!='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num3)})) : console.log('hello');
-        (this.state.num3 !=0 && this.state.num3!='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
-        (this.state.num4 !=0 && this.state.num4!='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num4)})) : console.log('hello');
-        (this.state.num4 !=0 && this.state.num4!='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
-        (this.state.num5 !=0 && this.state.num5!='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num5)})) : console.log('hello');
-        (this.state.num5 !=0 && this.state.num5!='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
-        (this.state.num6 !=0 && this.state.num6!='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num6)})) : console.log('hello');
-        (this.state.num6 !=0 && this.state.num6!='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
-        (this.state.num7 !=0 && this.state.num7!='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num7)})) : console.log('hello');
-        (this.state.num7 !=0 && this.state.num7!='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
-        (this.state.num8 !=0 && this.state.num8!='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num8)})) : console.log('hello');
-        (this.state.num8 !=0 && this.state.num8!='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
+        (this.state.num1 !==0 && this.state.num1!=='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num1)})) : console.log('hello');
+        (this.state.num1 !==0 && this.state.num1!=='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
+        (this.state.num2 !==0 && this.state.num2!=='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num2)})) : console.log('hello');
+        (this.state.num2 !==0 && this.state.num2!=='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
+        (this.state.num3 !==0 && this.state.num3!=='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num3)})) : console.log('hello');
+        (this.state.num3 !==0 && this.state.num3!=='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
+        (this.state.num4 !==0 && this.state.num4!=='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num4)})) : console.log('hello');
+        (this.state.num4 !==0 && this.state.num4!=='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
+        (this.state.num5 !==0 && this.state.num5!=='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num5)})) : console.log('hello');
+        (this.state.num5 !==0 && this.state.num5!=='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
+        (this.state.num6 !==0 && this.state.num6!=='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num6)})) : console.log('hello');
+        (this.state.num6 !==0 && this.state.num6!=='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
+        (this.state.num7 !==0 && this.state.num7!=='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num7)})) : console.log('hello');
+        (this.state.num7 !==0 && this.state.num7!=='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
+        (this.state.num8 !==0 && this.state.num8!=='' ) ? this.setState(prevstate => ({ total: (Number)(prevstate.total) + (Number)(this.state.num8)})) : console.log('hello');
+        (this.state.num8 !==0 && this.state.num8!=='' ) ? this.setState(prevstate => ({ count: (Number)(prevstate.count) + 1})) : console.log('hello');
         
         // (this.state.num1!='' || this.state.num1!=0) ? this.setState(prevstate => ({ total: (prevstate.total + this.state.num1)})):this.setState(prevstate => ({ total: prevstate.total}));
         this.setState({ print:true});
@@ -220,7 +220,7 @@ class Cgpa extends React.Component {
                                       </div>
                                 {
                                  this.state.print?
-                                 ((this.state.count != 0) ? <h1>{(Number(this.state.total/this.state.count).toFixed(2))}</h1> : <h1>{(Number(0).toFixed(2))}</h1>)
+                                 ((this.state.count !== 0) ? <h1>{(Number(this.state.total/this.state.count).toFixed(2))}</h1> : <h1>{(Number(0).toFixed(2))}</h1>)
                                 : null
                                 }
                         </div>
