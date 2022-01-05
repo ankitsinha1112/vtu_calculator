@@ -35,6 +35,10 @@ import './Sgpa_calculator.css'
         c7:'',
         c8:'',
         c9:'',
+        c10:'',
+        c11:'',
+        c12:'',
+        c13:''
       };
     }
   handlenum1=(event)=>{
@@ -122,7 +126,18 @@ exe=(event)=>{
     else if (this.props.sem === "1st & 2nd SEM CHEMISTRY-CYCLE") {   
       if(this.state.Title!=='(2018 SCHEME) CHEMISTRY GROUP 1ST & 2ND SEM.'){
      this.setState({Title:("(2018 SCHEME) CHEMISTRY GROUP 1ST & 2ND SEM.")})
+     this.setState({
+      c1:'4',
+      c2:'4',
+      c3:'3',
+      c4:'3',
+      c5:'3',
+      c6:'1',
+      c7:'1',
+      c8:'1'
+     })
       this.setState({sub1:("18MAT11/21")})
+      
       this.setState({sub2:("18CHE12")})
         this.setState({sub3:("18CPS13")})
         this.setState({sub4:("18ELN14")})
@@ -137,6 +152,19 @@ exe=(event)=>{
           case '3':
               // console.log(sem);
               if(this.state.Title!=='3rd SEM'){
+                this.setState({
+                  c1:'3',
+                  c2:'4',
+                  c3:'3',
+                  c4:'3',
+                  c5:'3',
+                  c6:'3',
+                  c7:'2',
+                  c8:'2',
+                  c9:'1',
+                  c10:'1',
+                  c11:'1'
+                 })
               this.setState({Title:("3rd SEM")})
               this.setState({sub1:("18MAT31")})
             this.setState({sub2:("18CS32")})
@@ -151,6 +179,19 @@ exe=(event)=>{
            break;
         case '4':
           if(this.state.Title!=='4th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1',
+              c10:'1',
+              c11:'1'
+             })
            this.setState({Title:("4th SEM")})
           this.setState({sub1:("18MAT41")})
           this.setState({sub2:("18CS42")})
@@ -165,6 +206,18 @@ exe=(event)=>{
         break;
         case '5':
           if(this.state.Title!=='5th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'4',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+            
+             })
            this.setState({Title:("5th SEM")})
           this.setState({sub1:("18MAT51")})
           this.setState({sub2:("18CS52")})
@@ -179,6 +232,16 @@ exe=(event)=>{
           break;
         case '6':
           if(this.state.Title!=='6th SEM'){
+            this.setState({
+              c1:'4',
+              c2:'4',
+              c3:'4',
+              c4:'3',
+              c5:'3',
+              c6:'2',
+              c7:'2',
+              c8:'2'
+             })
            this.setState({Title:("6th SEM")})
           this.setState({sub1:("18IS61")})
           this.setState({sub2:("18IS62")})
@@ -192,6 +255,15 @@ exe=(event)=>{
           break;
         case '7':
           if(this.state.Title!=='7th SEM'){
+            this.setState({
+              c1:'4',
+              c2:'4',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'2',
+              c7:'1'              
+             })
            this.setState({Title:("7th SEM")})
           this.setState({sub1:("18CS71")})
           this.setState({sub2:("18CS72")})
@@ -204,6 +276,14 @@ exe=(event)=>{
           break;
         case '8':
           if(this.state.Title!=='8th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'3',
+              c3:'8',
+              c4:'1',
+              c5:'3'
+                            
+             })
            this.setState({Title:("8th SEM")})
           this.setState({sub1:("18CS81")})
           this.setState({sub2:("18CS82X")})
