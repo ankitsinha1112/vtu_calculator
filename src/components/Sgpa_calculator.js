@@ -35,10 +35,16 @@ import './Sgpa_calculator.css'
         c7:'0',
         c8:'0',
         c9:'0',
-        c10:'0',
-        c11:'0',
-        c12:'0',
-        c13:'0',
+        x1:0,
+        x2:0,
+        x3:0,
+        x4:0,
+        x5:0,
+        x6:0,
+        x7:0,
+        x8:0,
+        x9:0,
+        x10:0,
         t1:'',
         t2:''
       };
@@ -100,9 +106,18 @@ handleChange9=(event)=>{
 }
 
 exe=(event)=>{
-  event.preventDefault()
+  event.preventDefault();
+  (this.state.m1==='100')? this.setState({x1:10}):this.setState({x1:Number(Math.floor(this.state.m1/10))+1});
+  (this.state.m2==='100')? this.setState({x2:10}):this.setState({x2:Number(Math.floor(this.state.m2/10))+1});
+  (this.state.m3==='100')? this.setState({x3:10}):this.setState({x3:Number(Math.floor(this.state.m3/10))+1});
+  (this.state.m4==='100')? this.setState({x4:10}):this.setState({x4:Number(Math.floor(this.state.m4/10))+1});
+  (this.state.m5==='100')? this.setState({x5:10}):this.setState({x5:Number(Math.floor(this.state.m5/10))+1});
+  (this.state.m6==='100')? this.setState({x6:10}):this.setState({x6:Number(Math.floor(this.state.m6/10))+1});
+  (this.state.m7==='100')? this.setState({x7:10}):this.setState({x7:Number(Math.floor(this.state.m7/10))+1});
+  (this.state.m8==='100')? this.setState({x8:10}):this.setState({x8:Number(Math.floor(this.state.m8/10))+1});
+  (this.state.m9==='100')? this.setState({x9:10}):this.setState({x9:Number(Math.floor(this.state.m9/10))+1});
   this.setState({
-        t2:(Number(this.state.c1)+Number(this.state.c2)+Number(this.state.c3)+Number(this.state.c4)+Number(this.state.c5)+Number(this.state.c6)+Number(this.state.c7)+Number(this.state.c8)+Number(this.state.c9)+Number(this.state.c10)+Number(this.state.c11)+Number(this.state.c12)+Number(this.state.c13))
+        t2:(Number(this.state.c1)+Number(this.state.c2)+Number(this.state.c3)+Number(this.state.c4)+Number(this.state.c5)+Number(this.state.c6)+Number(this.state.c7)+Number(this.state.c8)+Number(this.state.c9))
   });
   this.setState({ print:true});
 }
@@ -174,9 +189,7 @@ exe=(event)=>{
                   c6:'3',
                   c7:'2',
                   c8:'2',
-                  c9:'1',
-                  c10:'1',
-                  c11:'1'
+                  c9:'1'
                  })
               this.setState({Title:("3rd SEM")})
               this.setState({sub1:("18MAT31")})
@@ -1054,12 +1067,21 @@ exe=(event)=>{
               </div>
             </div>
             <h1>{this.state.t2}</h1>
+            {/* <h1>{this.state.x1*Number(this.state.c1)}</h1>
+            <h1>{this.state.x2*Number(this.state.c2)}</h1>
+            <h1>{this.state.x3*Number(this.state.c3)}</h1>
+            <h1>{this.state.x4*Number(this.state.c4)}</h1>
+            <h1>{this.state.x5*Number(this.state.c5)}</h1>
+            <h1>{this.state.x6*Number(this.state.c6)}</h1>
+            <h1>{this.state.x7*Number(this.state.c7)}</h1>
+            <h1>{this.state.x8*Number(this.state.c8)}</h1>
+    <h1>{this.state.t2}</h1> */}
             <div className="btn">
                                  <button  onClick={this.exe}>Submit</button>
             </div>
                                 {
                                 this.state.print?
-                                (<h1>{Number(Number(this.state.m1)+Number(this.state.m2)+Number(this.state.m3)+Number(this.state.m4)+Number(this.state.m5)+Number(this.state.m6)+Number(this.state.m7)+Number(this.state.m8))}</h1>)
+                                (<h1>{Number(Number((this.state.x1)*Number(this.state.c1)+(this.state.x2)*Number(this.state.c2)+(this.state.x3)*Number(this.state.c3)+(this.state.x4)*Number(this.state.c4)+(this.state.x5)*Number(this.state.c5)+(this.state.x6)*Number(this.state.c6)+(this.state.x7)*Number(this.state.c7)+(this.state.x8)*Number(this.state.c8)+(this.state.x9)*Number(this.state.c9))/this.state.t2).toFixed(2)}</h1>)
                                 :(null)
                                 } 
         
