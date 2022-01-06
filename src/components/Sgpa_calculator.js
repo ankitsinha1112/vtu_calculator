@@ -788,7 +788,7 @@ exe=(event)=>{
                 />
               </div>
             </div>
-            <h1>{this.state.x1*Number(this.state.c1)}</h1>
+            {/* <h1>{this.state.x1*Number(this.state.c1)}</h1>
             <h1>{this.state.x2*Number(this.state.c2)}</h1>
             <h1>{this.state.x3*Number(this.state.c3)}</h1>
             <h1>{this.state.x4*Number(this.state.c4)}</h1>
@@ -796,7 +796,7 @@ exe=(event)=>{
             <h1>{this.state.x6*Number(this.state.c6)}</h1>
             <h1>{this.state.x7*Number(this.state.c7)}</h1>
             <h1>{this.state.x8*Number(this.state.c8)}</h1>
-            <h1>{this.state.t2}</h1>
+    <h1>{this.state.t2}</h1> */}
             <div className="btn">
                                  <button  onClick={this.exe}>Submit</button>
             </div>
