@@ -26,19 +26,21 @@ import './Sgpa_calculator.css'
         m7:'',
         m8:'',
         m9:'',
-        c1:'',
-        c2:'',
-        c3:'',
-        c4:'',
-        c5:'',
-        c6:'',
-        c7:'',
-        c8:'',
-        c9:'',
-        c10:'',
-        c11:'',
-        c12:'',
-        c13:''
+        c1:'0',
+        c2:'0',
+        c3:'0',
+        c4:'0',
+        c5:'0',
+        c6:'0',
+        c7:'0',
+        c8:'0',
+        c9:'0',
+        c10:'0',
+        c11:'0',
+        c12:'0',
+        c13:'0',
+        t1:'',
+        t2:''
       };
     }
   handlenum1=(event)=>{
@@ -91,6 +93,9 @@ handleChange8=(event)=>{
 }
 exe=(event)=>{
   event.preventDefault()
+  this.setState({
+        t2:(Number(this.state.c1)+Number(this.state.c2)+Number(this.state.c3)+Number(this.state.c4)+Number(this.state.c5)+Number(this.state.c6)+Number(this.state.c7)+Number(this.state.c8)+Number(this.state.c9)+Number(this.state.c10)+Number(this.state.c11)+Number(this.state.c12)+Number(this.state.c13))
+  });
   this.setState({ print:true});
 }
   render(){
@@ -188,9 +193,7 @@ exe=(event)=>{
               c6:'3',
               c7:'2',
               c8:'2',
-              c9:'1',
-              c10:'1',
-              c11:'1'
+              c9:'1'
              })
            this.setState({Title:("4th SEM")})
           this.setState({sub1:("18MAT41")})
@@ -907,6 +910,7 @@ exe=(event)=>{
                 />
               </div>
             </div>
+            <h1>{this.state.t2}</h1>
             <div className="btn">
                                  <button  onClick={this.exe}>Submit</button>
             </div>
