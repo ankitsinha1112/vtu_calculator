@@ -44,7 +44,6 @@ import './Sgpa_calculator.css'
         x7:0,
         x8:0,
         x9:0,
-        x10:0,
         t1:'',
         t2:''
       };
@@ -100,7 +99,7 @@ handleChange8=(event)=>{
 
 handleChange9=(event)=>{
   this.setState({
-    m8:event.target.value,
+    m9:event.target.value,
     print:false,
   });
 }
@@ -1066,7 +1065,7 @@ exe=(event)=>{
                 />
               </div>
             </div>
-            <h1>{this.state.t2}</h1>
+            {/* <h1>{this.state.t2}</h1> */}
             {/* <h1>{this.state.x1*Number(this.state.c1)}</h1>
             <h1>{this.state.x2*Number(this.state.c2)}</h1>
             <h1>{this.state.x3*Number(this.state.c3)}</h1>
