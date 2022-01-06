@@ -301,6 +301,17 @@ exe=(event)=>{
       switch (this.props.sem) {
         case '3':
           if(this.state.Title!=='3rd SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+             })
            this.setState({Title:("3rd SEM")})
           this.setState({sub1:("18MAT31")})
           this.setState({sub2:("18EC32")})
@@ -315,6 +326,17 @@ exe=(event)=>{
           break;
         case '4':
           if(this.state.Title!=='4th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+             })
            this.setState({Title:("4th SEM")})
           this.setState({sub1:("18MAT41")})
           this.setState({sub2:("18EC42")})
@@ -328,6 +350,18 @@ exe=(event)=>{
           break;
         case '5':
           if(this.state.Title!=='5th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'4',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+            
+             })
            this.setState({Title:("5th SEM")})
           this.setState({sub1:("18ES51")})
           this.setState({sub2:("18EC52")})
@@ -341,6 +375,16 @@ exe=(event)=>{
           break;
         case '6':
           if(this.state.Title!=='6th SEM'){
+            this.setState({
+              c1:'4',
+              c2:'4',
+              c3:'4',
+              c4:'3',
+              c5:'3',
+              c6:'2',
+              c7:'2',
+              c8:'2'
+             })
            this.setState({Title:("6th SEM")})
           this.setState({sub1:("18EC61")})
           this.setState({sub2:("18EC62")})
@@ -354,6 +398,16 @@ exe=(event)=>{
           break;
         case '7':
           if(this.state.Title!=='7th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'3',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'2',
+              c7:'2',
+              c8:'1'              
+             })
            this.setState({Title:("7th SEM")})
           this.setState({sub1:("18EC71")})
           this.setState({sub2:("18EC72")})
@@ -367,6 +421,14 @@ exe=(event)=>{
           break;
         case '8':
           if(this.state.Title!=='8th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'3',
+              c3:'8',
+              c4:'1',
+              c5:'3'
+                            
+             })
            this.setState({Title:("8th SEM")})
           this.setState({sub1:("18EC81")})
           this.setState({sub2:("18XX82X")})
@@ -385,6 +447,17 @@ exe=(event)=>{
       switch (this.props.sem) {
         case '3':
           if(this.state.Title!=='3rd SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+             })
            this.setState({Title:("3rd SEM")})
           this.setState({sub1:("18MAT31")})
           this.setState({sub2:("18EE32")})
@@ -399,6 +472,17 @@ exe=(event)=>{
           break;
         case '4':
           if(this.state.Title!=='4th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'3',
+              c3:'4',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+             })
            this.setState({Title:("4th SEM")})
           this.setState({sub1:("18MAT41")})
           this.setState({sub2:("18EE42")})
@@ -413,6 +497,18 @@ exe=(event)=>{
           break;
         case '5':
           if(this.state.Title!=='5th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'4',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+            
+             })
            this.setState({Title:("5th SEM")})
           this.setState({sub1:("18EE51")})
           this.setState({sub2:("18EE52")})
@@ -427,6 +523,16 @@ exe=(event)=>{
           break;
         case '6':
           if(this.state.Title!=='6th SEM'){
+            this.setState({
+              c1:'4',
+              c2:'4',
+              c3:'4',
+              c4:'3',
+              c5:'3',
+              c6:'2',
+              c7:'2',
+              c8:'2'
+             })
            this.setState({Title:("6th SEM")})
           this.setState({sub1:("18EE61")})
           this.setState({sub2:("18EE62")})
@@ -440,6 +546,16 @@ exe=(event)=>{
           break;
         case '7':
           if(this.state.Title!=='7th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'3',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'2',
+              c7:'2',
+              c8:'1'              
+             })
            this.setState({Title:("7th SEM")})
           this.setState({sub1:("18EE71")})
           this.setState({sub2:("18EE72")})
@@ -453,6 +569,14 @@ exe=(event)=>{
           break;
         case '8':
           if(this.state.Title!=='8th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'3',
+              c3:'8',
+              c4:'1',
+              c5:'3'
+                            
+             })
            this.setState({Title:("8th SEM")})
           this.setState({sub1:("18EE81")})
           this.setState({sub2:("18EE82")})
@@ -472,6 +596,17 @@ exe=(event)=>{
       switch (this.props.sem) {
         case '3':
           if(this.state.Title!=='3rd SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+             })
            this.setState({Title:("3rd SEM")})
           this.setState({sub1:("18MAT31")})
           this.setState({sub2:("18ME32")})
