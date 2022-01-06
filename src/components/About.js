@@ -16,7 +16,7 @@ export const About = () => {
       </div>
       <div id="employee">
         <div id="dhomya">
-          <img src={dhomya} alt="image" />
+          <img src={dhomya} alt="dhomya" />
           <p>
             A growing full stack web developer, who specializes in building web
             applications for the best digital experiences. I am keenly focused
@@ -28,7 +28,7 @@ export const About = () => {
           </p>
         </div>
         <div id="ankit">
-          <img src={ankit} alt="image" />
+          <img src={ankit} alt="ankit" />
           <p>
             A growing full stack web developer, who specializes in building web
             applications for the best digital experiences. I am keenly focused
