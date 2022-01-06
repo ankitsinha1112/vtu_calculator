@@ -91,6 +91,14 @@ handleChange8=(event)=>{
     print:false,
   });
 }
+
+handleChange9=(event)=>{
+  this.setState({
+    m8:event.target.value,
+    print:false,
+  });
+}
+
 exe=(event)=>{
   event.preventDefault()
   this.setState({
@@ -624,6 +632,18 @@ exe=(event)=>{
           break;
         case '4':
           if(this.state.Title!=='4th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+             })
+            
            this.setState({Title:("4th SEM")})
           this.setState({sub1:("18MAT41")})
           this.setState({sub2:("18ME42")})
@@ -637,6 +657,20 @@ exe=(event)=>{
           break;
         case '5':
           if(this.state.Title!=='5th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'4',
+              c4:'3',
+              c5:'3',
+              c6:'2',
+              c7:'3',
+              c8:'2',
+              c9:'1'
+            
+             })
+
+
            this.setState({Title:("5th SEM")})
           this.setState({sub1:("18ME51")})
           this.setState({sub2:("18ME52")})
@@ -650,6 +684,17 @@ exe=(event)=>{
           break;
         case '6':
           if(this.state.Title!=='6th SEM'){
+
+            this.setState({
+              c1:'4',
+              c2:'4',
+              c3:'4',
+              c4:'3',
+              c5:'2',
+              c6:'2',
+              c7:'2',
+              c8:'2'
+             })
            this.setState({Title:("6th SEM")})
           this.setState({sub1:("18ME61")})
           this.setState({sub2:("18ME62")})
@@ -663,6 +708,16 @@ exe=(event)=>{
           break;
         case '7':
           if(this.state.Title!=='7th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'3',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'2',
+              c7:'2',
+              c8:'1'              
+             })
            this.setState({Title:("7th SEM")})
           this.setState({sub1:("18ME71")})
           this.setState({sub2:("18ME72")})
@@ -676,6 +731,15 @@ exe=(event)=>{
           break;
         case '8':
           if(this.state.Title!=='8th SEM'){
+
+            this.setState({
+              c1:'3',
+              c2:'3',
+              c3:'8',
+              c4:'1',
+              c5:'3'
+                            
+             })
            this.setState({Title:("8th SEM")})
           this.setState({sub1:("18ME81")})
           this.setState({sub2:("18ME82X")})
@@ -695,6 +759,17 @@ exe=(event)=>{
       switch (this.props.sem) {
         case '3':
           if(this.state.Title!=='3rd SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+             })
            this.setState({Title:("3rd SEM")})
           this.setState({sub1:("18MAT31")})
           this.setState({sub2:("18CV32")})
@@ -709,6 +784,17 @@ exe=(event)=>{
           break;
         case '4':
           if(this.state.Title!=='4th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+             })
            this.setState({Title:("4th SEM")})
           this.setState({sub1:("18MAT41")})
           this.setState({sub2:("18CV42")})
@@ -722,6 +808,19 @@ exe=(event)=>{
           break;
         case '5':
           if(this.state.Title!=='5th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'4',
+              c3:'4',
+              c4:'3',
+              c5:'3',
+              c6:'3',
+              c7:'2',
+              c8:'2',
+              c9:'1'
+            
+             })
+
            this.setState({Title:("5th SEM")}) 
           this.setState({sub1:("18CV51")})
           this.setState({sub2:("18CV52")})
@@ -735,6 +834,16 @@ exe=(event)=>{
           break;
         case '6':
           if(this.state.Title!=='6th SEM'){
+            this.setState({
+              c1:'4',
+              c2:'4',
+              c3:'4',
+              c4:'3',
+              c5:'3',
+              c6:'2',
+              c7:'2',
+              c8:'2'
+             })
            this.setState({Title:("6th SEM")})
           this.setState({sub1:("18CV61")})
           this.setState({sub2:("18CV62")})
@@ -748,6 +857,16 @@ exe=(event)=>{
           break;
         case '7':
           if(this.state.Title!=='7th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'3',
+              c3:'3',
+              c4:'3',
+              c5:'3',
+              c6:'2',
+              c7:'2',
+              c8:'1'              
+             })
            this.setState({Title:("7th SEM")})
           this.setState({sub1:("18CV71")})
           this.setState({sub2:("18CV72")})
@@ -760,6 +879,14 @@ exe=(event)=>{
           break;
         case '8':
           if(this.state.Title!=='8th SEM'){
+            this.setState({
+              c1:'3',
+              c2:'3',
+              c3:'8',
+              c4:'1',
+              c5:'3'
+                            
+             })
            this.setState({Title:("8th SEM")})
           this.setState({sub1:("18CV81")})
           this.setState({sub2:("18CV82X")})
@@ -906,6 +1033,22 @@ exe=(event)=>{
                   placeholder="0"
                   value={this.state.m8}
                   onChange={this.handleChange8}
+                  required
+                />
+              </div>
+            </div>
+            <div className="sub">
+              <div className="subname">
+                <h5>{this.state.sub9} -</h5>
+              </div>
+              <div className="form">
+                <input
+                  type="number"
+                  min="0"
+                  max="100"
+                  placeholder="0"
+                  value={this.state.m9}
+                  onChange={this.handleChange9}
                   required
                 />
               </div>

@@ -16,6 +16,11 @@
   font-family: 'Ubuntu', sans-serif;
   border-radius: 25px;
 }
+.topnav a:active{
+  background-color: #ddd;
+  color: black;
+  border-radius: 25px;
+}
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -29,12 +34,13 @@
   background-color: #ddd;
   color: black;
 } */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 918px) {
   .topnav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    font-size: 0.7rem;
 
   }
 }
