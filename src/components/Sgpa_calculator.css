@@ -5,6 +5,7 @@
     background-color: black;
     color: white;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@600&family=Ubuntu&display=swap');
 body{
     background-color: black;
@@ -84,8 +85,8 @@ body{
 }
 
 @media screen and (max-width: 1290px) {
-    .head {
-      font-size: 20px;
+    .head h1 {
+      font-size: 42px;
     }
   }
 
@@ -94,4 +95,8 @@ body{
       font-size: 18px;
       padding-top: 10px;
     }
+  }
+
+  .result{
+    font-family: 'Ubuntu', sans-serif;
   }
