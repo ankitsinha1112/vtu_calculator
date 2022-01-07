@@ -7,9 +7,9 @@ export const Navbar = () => {
     <div>
       <div className="topnav">
         {/* <Link to className="active" href="/"> */}
-        <NavLink to="/">
+        <Link to="/" >
           HOME
-        </NavLink>
+        </Link>
         <Link to="/home">
         SGPA CALCULATOR
         </Link>
