@@ -44,7 +44,6 @@ import './Sgpa_calculator.css'
         x7:0,
         x8:0,
         x9:0,
-        t1:'',
         t2:''
       };
     }
@@ -921,7 +920,9 @@ exe=(event)=>{
         </div>
         <form action="/ ">
           <div className="marks">
-            <div className="sub">
+            {
+              this.state.sub1?
+            (<div className="sub">
               <div className="subname">
                 <h5>{this.state.sub1} -</h5>
               </div>
@@ -936,8 +937,12 @@ exe=(event)=>{
                   required
                 />
               </div>
-            </div>
-            <div className="sub">
+            </div>)
+            :(console.log('hello'))
+            }
+            {
+            this.state.sub2?
+              (<div className="sub">
               <div className="subname">
                 <h5>{this.state.sub2} -</h5>
               </div>
@@ -950,10 +955,14 @@ exe=(event)=>{
                   value={this.state.m2}
                   onChange={this.handleChange2}
                   required
-                />
+                  />
               </div>
-            </div>
-            <div className="sub">
+            </div>)
+            :(console.log('hello'))
+            }
+            {
+              this.state.sub3?
+            (<div className="sub">
               <div className="subname">
                 <h5>{this.state.sub3} -</h5>
               </div>
@@ -968,8 +977,12 @@ exe=(event)=>{
                   required
                 />
               </div>
-            </div>
-            <div className="sub">
+            </div>)
+            :(console.log('hello'))
+            }
+            {
+              this.state.sub4?
+            (<div className="sub">
               <div className="subname">
                 <h5>{this.state.sub4} -</h5>
               </div>
@@ -984,8 +997,12 @@ exe=(event)=>{
                   required
                 />
               </div>
-            </div>
-            <div className="sub">
+            </div>)
+            :(console.log('hello'))
+            }
+            {
+              this.state.sub5?
+            (<div className="sub">
               <div className="subname">
                 <h5>{this.state.sub5} -</h5>
               </div>
@@ -1000,8 +1017,12 @@ exe=(event)=>{
                   required
                 />
               </div>
-            </div>
-            <div className="sub">
+            </div>)
+            :(console.log('hello'))
+            }
+            {
+              this.state.sub6?
+            (<div className="sub">
               <div className="subname">
                 <h5>{this.state.sub6} -</h5>
               </div>
@@ -1016,8 +1037,12 @@ exe=(event)=>{
                   required
                 />
               </div>
-            </div>
-            <div className="sub">
+            </div>)
+            :(console.log('hello'))
+            }
+            {
+              this.state.sub7?
+            (<div className="sub">
               <div className="subname">
                 <h5>{this.state.sub7} -</h5>
               </div>
@@ -1032,8 +1057,12 @@ exe=(event)=>{
                   required
                 />
               </div>
-            </div>
-            <div className="sub">
+            </div>)
+            :(console.log('hello'))
+            }
+            {
+              this.state.sub8?
+            (<div className="sub">
               <div className="subname">
                 <h5>{this.state.sub8} -</h5>
               </div>
@@ -1048,8 +1077,12 @@ exe=(event)=>{
                   required
                 />
               </div>
-            </div>
-            <div className="sub">
+            </div>)
+            :(console.log('hello'))
+            }
+            {
+            this.state.sub9?
+            (<div className="sub">
               <div className="subname">
                 <h5>{this.state.sub9} -</h5>
               </div>
@@ -1064,7 +1097,9 @@ exe=(event)=>{
                   required
                 />
               </div>
-            </div>
+            </div>)
+            :console.log('hello')
+            }
             {/* <h1>{this.state.t2}</h1> */}
             {/* <h1>{this.state.x1*Number(this.state.c1)}</h1>
             <h1>{this.state.x2*Number(this.state.c2)}</h1>
