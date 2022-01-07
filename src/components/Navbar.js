@@ -22,6 +22,8 @@ export const Navbar = () => {
         <Link to="/about">
         ABOUT US
         </Link>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.nbird.vtusgpacalculator" className="app">OUR APP</a>
+       
         {/* <a href="/home">SGPA CALCULATOR</a>
         <a href="/cgpa"></a>
         <a href="/about"></a> */}
