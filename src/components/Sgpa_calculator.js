@@ -48,48 +48,64 @@ import './Sgpa_calculator.css'
       };
     }
   handlenum1=(event)=>{
+    (event.target.value>100 || event.target.value<0) ? alert("You can only insert value in range of 0 to 100") : console.log('hello');
+        (event.target.value>100 || event.target.value<0) ? event.target.value=0 : console.log('hello');
      this.setState({
        m1:event.target.value,
        print:false,
      });
  }
  handleChange2=(event)=>{
+   (event.target.value>100 || event.target.value<0) ? alert("You can only insert value in range of 0 to 100") : console.log('hello');
+        (event.target.value>100 || event.target.value<0) ? event.target.value=0 : console.log('hello');
   this.setState({
     m2:event.target.value,
     print:false,
   });
 }
 handleChange3=(event)=>{
+  (event.target.value>100 || event.target.value<0) ? alert("You can only insert value in range of 0 to 100") : console.log('hello');
+        (event.target.value>100 || event.target.value<0) ? event.target.value=0 : console.log('hello');
   this.setState({
     m3:event.target.value,
     print:false,
   });
 }
 handleChange4=(event)=>{
+  (event.target.value>100 || event.target.value<0) ? alert("You can only insert value in range of 0 to 100") : console.log('hello');
+        (event.target.value>100 || event.target.value<0) ? event.target.value=0 : console.log('hello');
   this.setState({
     m4:event.target.value,
     print:false,
   });
 }
 handleChange5=(event)=>{
+  (event.target.value>100 || event.target.value<0) ? alert("You can only insert value in range of 0 to 100") : console.log('hello');
+        (event.target.value>100 || event.target.value<0) ? event.target.value=0 : console.log('hello');
   this.setState({
     m5:event.target.value,
     print:false,
   });
 }
 handleChange6=(event)=>{
+  (event.target.value>100 || event.target.value<0) ? alert("You can only insert value in range of 0 to 100") : console.log('hello');
+        (event.target.value>100 || event.target.value<0) ? event.target.value=0 : console.log('hello');
   this.setState({
     m6:event.target.value,
     print:false,
   });
 }
 handleChange7=(event)=>{
+  (event.target.value>100 || event.target.value<0) ? alert("You can only insert value in range of 0 to 100") : console.log('hello');
+        (event.target.value>100 || event.target.value<0) ? event.target.value=0 : console.log('hello');
   this.setState({
     m7:event.target.value,
     print:false,
   });
 }
 handleChange8=(event)=>{
+  (event.target.value>100 || event.target.value<0) ? alert("You can only insert value in range of 0 to 100") : console.log('hello');
+        (event.target.value>100 || event.target.value<0) ? event.target.value=0 : console.log('hello');
   this.setState({
     m8:event.target.value,
     print:false,
@@ -97,6 +113,8 @@ handleChange8=(event)=>{
 }
 
 handleChange9=(event)=>{
+  (event.target.value>100 || event.target.value<0) ? alert("You can only insert value in range of 0 to 100") : console.log('hello');
+        (event.target.value>100 || event.target.value<0) ? event.target.value=0 : console.log('hello');
   this.setState({
     m9:event.target.value,
     print:false,
@@ -105,15 +123,87 @@ handleChange9=(event)=>{
 
 exe=(event)=>{
   event.preventDefault();
-  (this.state.m1==='')?(this.setState({x1:0})):((this.state.m1==='100')? this.setState({x1:10}):this.setState({x1:Number(Math.floor(this.state.m1/10))+1}))
-  (this.state.m2==='')?(this.setState({x2:0})):((this.state.m2==='100')? this.setState({x2:10}):this.setState({x2:Number(Math.floor(this.state.m2/10))+1}))
-  (this.state.m3==='')?(this.setState({x3:0})):((this.state.m3==='100')? this.setState({x3:10}):this.setState({x3:Number(Math.floor(this.state.m3/10))+1}))
-  (this.state.m4==='')?(this.setState({x4:0})):((this.state.m4==='100')? this.setState({x4:10}):this.setState({x4:Number(Math.floor(this.state.m4/10))+1}))
-  (this.state.m5==='')?(this.setState({x5:0})):((this.state.m5==='100')? this.setState({x5:10}):this.setState({x5:Number(Math.floor(this.state.m5/10))+1}))
-  (this.state.m6==='')?(this.setState({x6:0})):((this.state.m6==='100')? this.setState({x6:10}):this.setState({x6:Number(Math.floor(this.state.m6/10))+1}))
-  (this.state.m7==='')?(this.setState({x7:0})):((this.state.m7==='100')? this.setState({x7:10}):this.setState({x7:Number(Math.floor(this.state.m7/10))+1}))
-  (this.state.m8==='')?(this.setState({x8:0})):((this.state.m8==='100')? this.setState({x8:10}):this.setState({x8:Number(Math.floor(this.state.m8/10))+1}))
-  (this.state.m9==='')?(this.setState({x9:0})):((this.state.m9==='100')? this.setState({x9:10}):this.setState({x9:Number(Math.floor(this.state.m9/10))+1}))
+  if(this.state.m1==='')
+  {
+    (this.setState({x1:0}))
+  }
+  else
+  {
+    ((this.state.m1==='100')? this.setState({x1:10}):this.setState({x1:Number(Math.floor(this.state.m1/10))+1}));
+  }
+  if(this.state.m2==='')
+  {
+    (this.setState({x2:0}))
+  }
+  else
+  {
+    ((this.state.m2==='100')? this.setState({x2:10}):this.setState({x2:Number(Math.floor(this.state.m2/10))+1}));
+  }
+  if(this.state.m3==='')
+  {
+    (this.setState({x3:0}))
+  }
+  else
+  {
+    ((this.state.m3==='100')? this.setState({x3:10}):this.setState({x3:Number(Math.floor(this.state.m3/10))+1}));
+  }
+  if(this.state.m4==='')
+  {
+    (this.setState({x4:0}))
+  }
+  else
+  {
+    ((this.state.m4==='100')? this.setState({x4:10}):this.setState({x4:Number(Math.floor(this.state.m4/10))+1}));
+  }
+  if(this.state.m5==='')
+  {
+    (this.setState({x5:0}))
+  }
+  else
+  {
+    ((this.state.m5==='100')? this.setState({x5:10}):this.setState({x5:Number(Math.floor(this.state.m5/10))+1}));
+  }
+  if(this.state.m6==='')
+  {
+    (this.setState({x6:0}))
+  }
+  else
+  {
+    ((this.state.m6==='100')? this.setState({x6:10}):this.setState({x6:Number(Math.floor(this.state.m6/10))+1}));
+  }
+  if(this.state.m7==='')
+  {
+    (this.setState({x7:0}))
+  }
+  else
+  {
+    ((this.state.m7==='100')? this.setState({x7:10}):this.setState({x7:Number(Math.floor(this.state.m7/10))+1}));
+  }
+  if(this.state.m8==='')
+  {
+    (this.setState({x8:0}))
+  }
+  else
+  {
+    ((this.state.m8==='100')? this.setState({x8:10}):this.setState({x8:Number(Math.floor(this.state.m8/10))+1}));
+  }
+  if(this.state.m9==='')
+  {
+    (this.setState({x9:0}))
+  }
+  else
+  {
+    ((this.state.m9==='100')? this.setState({x9:10}):this.setState({x9:Number(Math.floor(this.state.m9/10))+1}));
+  }
+  
+  // (this.state.m2==='')?(this.setState({x2:0})):((this.state.m2==='100')? this.setState({x2:10}):this.setState({x2:Number(Math.floor(this.state.m2/10))+1}))
+  // (this.state.m3==='')?(this.setState({x3:0})):((this.state.m3==='100')? this.setState({x3:10}):this.setState({x3:Number(Math.floor(this.state.m3/10))+1}))
+  // (this.state.m4==='')?(this.setState({x4:0})):((this.state.m4==='100')? this.setState({x4:10}):this.setState({x4:Number(Math.floor(this.state.m4/10))+1}))
+  // (this.state.m5==='')?(this.setState({x5:0})):((this.state.m5==='100')? this.setState({x5:10}):this.setState({x5:Number(Math.floor(this.state.m5/10))+1}))
+  // (this.state.m6==='')?(this.setState({x6:0})):((this.state.m6==='100')? this.setState({x6:10}):this.setState({x6:Number(Math.floor(this.state.m6/10))+1}))
+  // (this.state.m7==='')?(this.setState({x7:0})):((this.state.m7==='100')? this.setState({x7:10}):this.setState({x7:Number(Math.floor(this.state.m7/10))+1}))
+  // (this.state.m8==='')?(this.setState({x8:0})):((this.state.m8==='100')? this.setState({x8:10}):this.setState({x8:Number(Math.floor(this.state.m8/10))+1}))
+  // (this.state.m9==='')?(this.setState({x9:0})):((this.state.m9==='100')? this.setState({x9:10}):this.setState({x9:Number(Math.floor(this.state.m9/10))+1}))
   this.setState({
         t2:(Number(this.state.c1)+Number(this.state.c2)+Number(this.state.c3)+Number(this.state.c4)+Number(this.state.c5)+Number(this.state.c6)+Number(this.state.c7)+Number(this.state.c8)+Number(this.state.c9))
   });
