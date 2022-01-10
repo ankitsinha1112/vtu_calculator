@@ -129,7 +129,7 @@ exe=(event)=>{
   }
   else
   {
-    ((this.state.m1==='100')? this.setState({x1:10}):this.setState({x1:Number(Math.floor(this.state.m1/10))+1}));
+    ((Number(this.state.m1)===100)? this.setState({x1:10}):this.setState({x1:Number(Math.floor(this.state.m1/10))+1}));
   }
   if(this.state.m2==='')
   {
@@ -137,7 +137,7 @@ exe=(event)=>{
   }
   else
   {
-    ((this.state.m2==='100')? this.setState({x2:10}):this.setState({x2:Number(Math.floor(this.state.m2/10))+1}));
+    ((Number(this.state.m2)===100)? this.setState({x2:10}):this.setState({x2:Number(Math.floor(this.state.m2/10))+1}));
   }
   if(this.state.m3==='')
   {
@@ -145,7 +145,7 @@ exe=(event)=>{
   }
   else
   {
-    ((this.state.m3==='100')? this.setState({x3:10}):this.setState({x3:Number(Math.floor(this.state.m3/10))+1}));
+    ((Number(this.state.m3)===100)? this.setState({x3:10}):this.setState({x3:Number(Math.floor(this.state.m3/10))+1}));
   }
   if(this.state.m4==='')
   {
@@ -153,7 +153,7 @@ exe=(event)=>{
   }
   else
   {
-    ((this.state.m4==='100')? this.setState({x4:10}):this.setState({x4:Number(Math.floor(this.state.m4/10))+1}));
+    ((Number(this.state.m4)===100)? this.setState({x4:10}):this.setState({x4:Number(Math.floor(this.state.m4/10))+1}));
   }
   if(this.state.m5==='')
   {
@@ -161,7 +161,7 @@ exe=(event)=>{
   }
   else
   {
-    ((this.state.m5==='100')? this.setState({x5:10}):this.setState({x5:Number(Math.floor(this.state.m5/10))+1}));
+    ((Number(this.state.m5)===100)? this.setState({x5:10}):this.setState({x5:Number(Math.floor(this.state.m5/10))+1}));
   }
   if(this.state.m6==='')
   {
@@ -169,7 +169,7 @@ exe=(event)=>{
   }
   else
   {
-    ((this.state.m6==='100')? this.setState({x6:10}):this.setState({x6:Number(Math.floor(this.state.m6/10))+1}));
+    ((Number(this.state.m6)===100)? this.setState({x6:10}):this.setState({x6:Number(Math.floor(this.state.m6/10))+1}));
   }
   if(this.state.m7==='')
   {
@@ -177,7 +177,7 @@ exe=(event)=>{
   }
   else
   {
-    ((this.state.m7==='100')? this.setState({x7:10}):this.setState({x7:Number(Math.floor(this.state.m7/10))+1}));
+    ((Number(this.state.m7)===100)? this.setState({x7:10}):this.setState({x7:Number(Math.floor(this.state.m7/10))+1}));
   }
   if(this.state.m8==='')
   {
@@ -185,7 +185,7 @@ exe=(event)=>{
   }
   else
   {
-    ((this.state.m8==='100')? this.setState({x8:10}):this.setState({x8:Number(Math.floor(this.state.m8/10))+1}));
+    ((Number(this.state.m8)===100)? this.setState({x8:10}):this.setState({x8:Number(Math.floor(this.state.m8/10))+1}));
   }
   if(this.state.m9==='')
   {
@@ -193,7 +193,7 @@ exe=(event)=>{
   }
   else
   {
-    ((this.state.m9==='100')? this.setState({x9:10}):this.setState({x9:Number(Math.floor(this.state.m9/10))+1}));
+    ((Number(this.state.m9)===100)? this.setState({x9:10}):this.setState({x9:Number(Math.floor(this.state.m9/10))+1}));
   }
   
   // (this.state.m2==='')?(this.setState({x2:0})):((this.state.m2==='100')? this.setState({x2:10}):this.setState({x2:Number(Math.floor(this.state.m2/10))+1}))
